@@ -1,0 +1,25 @@
+Users/AddUser (POST)
+Users/DeleteUser (POST)
+Users/GetAllUsers (GET)
+Users/GetUser (GET)
+
+Products/AddProduct (POST)
+Products/DeleteProduct (DELETE)
+Products/GetAllProducts (GET)
+Products/GetSearch (GET)
+Products/{productid} (GET)
+
+Products/AddSpecificProduct (POST)
+Products/DeleteSpecificProduct (DELETE)
+Products/GetAllSpecificProducts (GET)
+Products/GetSpecificProduct (GET)
+
+Orders/AddOrder (POST)
+Orders/DeleteOrder (DELETE)
+Orders/GetAllOrders (GET)
+Orders/GetOrdersFromUser (GET)
+
+Orders/AddOrderDetail (POST)
+Orders/GetOrderDetailsFromOrder (GET)
+
+Products/Import (POST)
