@@ -16,6 +16,9 @@
     <link href="assets/ItemSlider/css/main-style.css" rel="stylesheet" />
     <!-- custom CSS here -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/requests.js"></script>
+
 </head>
 <body>
     <nav class="navbar navbar-default" role="navigation">
@@ -186,7 +189,7 @@
                     </ul>
                 </div>
                 <!-- /.div -->
-                <div class="well well-lg offer-box offer-colors">
+                <!-- <div class="well well-lg offer-box offer-colors">
 
 
                     <span class="glyphicon glyphicon-star-empty"></span>25 % off  , GRAB IT                 
@@ -201,7 +204,7 @@
                         </div>
                     </div>
                     <a href="#">click here to know more </a>
-                </div>
+                </div> -->
                 
             </div>
             
@@ -216,7 +219,7 @@
                 
                 <div class="row">
                     <div class="btn-group alg-right-pad">
-                        <button type="button" class="btn btn-default"><strong>1235  </strong>items</button>
+                        <button type="button" class="btn btn-default"><strong id=itemcount>1235  </strong>items</button>
                         <!-- Number of items, not really working atm-->
                         <div class="btn-group">
                             <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
@@ -238,8 +241,8 @@
                 </div>
                 <!-- /.row -->
                 <!-- Products showing uo here, this is important-->
-                <div class="row">
-                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                <div id="productbrowse">
+                    <!-- <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
                             <img src="assets/img/testphoto.jpg" alt="" />
                             <div class="caption">
@@ -250,7 +253,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.col -->
+                    /.col
                     <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
                             <img src="assets/img/testphoto.jpg" alt="" />
@@ -263,7 +266,7 @@
                         </div>
                     </div>
                     <!-- /.col -->
-                    <div class="col-md-4 text-center col-sm-6 col-xs-6">
+                    <!-- <div class="col-md-4 text-center col-sm-6 col-xs-6">
                         <div class="thumbnail product-box">
                             <img src="assets/img/testphoto.jpg" alt="" />
                             <div class="caption">
@@ -273,21 +276,19 @@
                                 <p><a href="#" class="btn btn-success" role="button">Add To Cart</a> <a href="#" class="btn btn-primary" role="button">See Details</a></p>
                             </div>
                         </div>
-                    </div>
+                    </div> --> 
                     <!-- /.col -->
                 </div>
+
+                <span id="page"></span>
                 <!-- /.row -->
                 <div class="row">
                     <ul class="pagination alg-right-pad">
-                        <li><a href="#">&laquo;</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&raquo;</a></li>
+                        <li><a id="btn_prev" href="#">&laquo;</a></li>
+                        <li><a id="btn_next" href="#">&raquo;</a></li>
                     </ul>
                 </div>
+                
                 <!-- /.row -->
                 </div>
             <!-- /.col -->
