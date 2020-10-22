@@ -451,7 +451,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 18px;
 }
 h4,
 .h4 {
@@ -4422,6 +4422,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
+  height: 140px;
   color: #333;
 }
 .alert {
